@@ -41,9 +41,7 @@
     %h5
       Progress:
       %small
-        #{@milestone.closed_items_count} closed
-        &ndash;
-        #{@milestone.open_items_count} open
+        #{@milestone.closed_items_count} closed &ndash; #{@milestone.open_items_count} open
       %span.right= @milestone.expires_at
     .progress.progress-info
       .bar{style: "width: #{@milestone.percent_complete}%;"}
